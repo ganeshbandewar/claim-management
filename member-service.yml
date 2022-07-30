@@ -3,11 +3,10 @@ server:
  
 
 #server.servlet.context-path=/memberModule
-
-Authorization.URL: http://localhost:8008/authorization
-Claims.URL : http://localhost:8010/claimModule
-Policy.URL : http://localhost:8081
-
+Authorization.URL: ${AUTH_URL:http://localhost}:8008/authorization
+Claims.URL:  ${CLAIMS_URL:http://localhost}:8010/claimModule
+Policy.URL: ${POLICY_URL:http://localhost}:8081
+APIGATEWAY.URL: ${API_URL:http://localhost}:8881/claimModule
  
  
  
@@ -29,4 +28,10 @@ spring:
     console:
       settings:
         web-allow-others: true
-  
+  cloud:
+    compatibility-verifier:
+      enabled: false  
+    config:
+      enabled: false
+
+
