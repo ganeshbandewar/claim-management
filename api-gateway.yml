@@ -9,4 +9,5 @@ Authorization.URL: ${AUTH_URL:http://localhost}:8008/authorization
 Claims.URL:  ${CLAIMS_URL:http://localhost}:8010/claimModule
 Policy.URL: ${POLICY_URL:http://localhost}:8081/policy
 Ui.URL: ${UI_URL:http://localhost}:8080
+Member.URL: ${MEMBER_URL:http://localhost}:8099/memberModule
 
